@@ -1,9 +1,15 @@
 import '../index.css'
+import React from "react";
 import Navbar from "./navbar/Navbar";
+import WorkingArea from "./workingArea/WorkingArea";
+
 function App() {
   return (
-    <Navbar/>
-);
+      <React.Fragment>
+        <Navbar />
+        <WorkingArea />
+      </React.Fragment>
+  );
 }
 
 export default App;
