@@ -8,6 +8,8 @@ module.exports = {
     extend: {
       spacing: {
         '50vh': '50vh',
+        '40vh': '40vh',
+        '45vh': '45vh',
         '30vh': '30vh',
       },
       maxWidth: {
@@ -18,6 +20,10 @@ module.exports = {
       },
       backdropBlur: {
         '1.5': '1.5px',
+      },
+      borderRadius: {
+        '4.5rem': '4.5rem',
+        '2.5rem': '2.5rem'
       }
     },
   },
