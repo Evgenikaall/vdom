@@ -24,7 +24,7 @@ const Navbar = () => {
                     <div className="flex 2xl:w-4/5 xl:w-4/5 lg:w-4/5 md:w-4/5 w-full justify-start items-center">
                         <div className="flex items-center pr-10 md:pr-16">
                             <div className="flex-shrink-0">
-                                <img src={logoUrl} alt="Logo" className="h-18 w-fit sm:h-16"/>
+                                <img src={logoUrl} alt="Logo" className="h-16"/>
                             </div>
                         </div>
                         <div className="hidden md:flex h-full">
