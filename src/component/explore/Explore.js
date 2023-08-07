@@ -11,7 +11,7 @@ const Explore = () => {
     };
 
     return (
-        <section className="h-[80vh] bg-white my-20 max-lg:h-[130vh]">
+        <section className="bg-white my-20">
             <div className="flex flex-col items-center">
                 <h1 className="py-5 text-5xl">Explore</h1>
                 <div className="flex w-[95%] flex-wrap justify-around max-lg:w-[70%] max-sm:w-[95%]">
