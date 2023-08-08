@@ -7,6 +7,7 @@ import Info from "./Info/Info";
 import Workflow from "./workflow/Workflow";
 import Explore from "./explore/Explore";
 import Footer from "./footer/Footer";
+import Delivery from './delivery/Delivery';
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
             <WorkingArea/>
             <Explore/>
             <Workflow/>
+            <Delivery/>
             <Footer/>
         </React.Fragment>
     );

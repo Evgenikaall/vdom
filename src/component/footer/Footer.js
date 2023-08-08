@@ -5,7 +5,7 @@ import {faViber} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => (
     <footer className="w-[95%] mx-auto">
-        <div className="bg-main-color h-[40vh] mt-[10vh] rounded-t-2.5rem flex flex-col items-center justify-center">
+        <div className="bg-main-color h-[40vh] mt-[10vh] rounded-2.5rem flex flex-col items-center justify-center mb-5">
             <img src={logoUrl} alt="Logo" className="h-20 w-fit"/>
             <div className="flex">
                 <div className="flex items-center h-full">
