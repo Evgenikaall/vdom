@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
+        '94vh': '94vh',
         '90vh': '90vh',
         '50vh': '50vh',
         '75vh': '75vh',
@@ -30,7 +31,10 @@ module.exports = {
         '2rem': '2rem',
         '2.5rem': '2.5rem',
         '4.5rem': '4.5rem'
-      }
+      },
+      fontSize:{
+        '12xl':'10.68rem',
+      },
     },
   },
   plugins: [],
