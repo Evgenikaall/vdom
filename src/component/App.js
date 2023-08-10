@@ -8,6 +8,7 @@ import Workflow from "./workflow/Workflow";
 import Explore from "./explore/Explore";
 import Footer from "./footer/Footer";
 import Delivery from './delivery/Delivery';
+import QuestionList from "./question/QuestionList";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
             <Explore/>
             <Workflow/>
             <Delivery/>
+            <QuestionList/>
             <Footer/>
         </React.Fragment>
     );

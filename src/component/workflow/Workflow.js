@@ -7,7 +7,7 @@ function Workflow() {
         <section className="w-full flex justify-around items-center flex-col pt-10">
             <h1 className="text-6xl mb-10">Workflow</h1>
             <div className="w-full flex px-10 justify-around max-lg:flex-col max-lg:items-center ">
-                <div className="w-[97%] absolute left-1/2 right-1/2 -translate-x-1/2 translate-y-1/2 h-15vh border-2 border-gray-500 rounded-t-4.5rem rounded-b-4.5rem max-lg:hidden"></div>
+                <div className="w-[97%] absolute left-1/2 right-1/2 -translate-x-1/2 translate-y-1/2 h-24 border-2 border-gray-500 rounded-t-4.5rem rounded-b-4.5rem max-lg:hidden"></div>
                 <WorkflowSlide/>
                 <WorkflowSlide/>
                 <WorkflowSlide/>
