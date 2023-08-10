@@ -1,2 +1,11 @@
-
 @import './tailwind.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    #root {
+        @apply max-[350px]:overflow-x-scroll
+    }
+}
