@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faAngleDown} from "@fortawesome/fontawesome-free-solid";
+import mock from './assets/mock-svg.svg'
 
 const QuestionList = () => {
     const questions = [
@@ -46,13 +45,13 @@ const QuestionList = () => {
     };
 
     return (
-        <section className="w-[85%] flex flex-col my-10 mx-auto">
+        <section className="w-[85%] flex flex-col my-10 mx-auto bg-center " style={{backgroundImage: `url(${mock})`}}>
             <h1 className="text-4xl text-red-600 mb-10 w-[70%] text-center">Questions ?</h1>
-            <div className="shadow-[0px_0px_10px_5px_rgba(0,0,0,0.10)] flex flex-col w-[80%]">
+            <div className="shadow-[0px_0px_10px_5px_rgba(0,0,0,0.10)] flex flex-col w-[80%] rounded-[1.5rem]">
                 {questions.map((question, index) => (
-                    <div className={`${index === 0 ? 'bg-gray-300' : ''} bg-white`}>
-                        <div key={index} className={`border-b-[1px] flex flex-col`}>
-                            <div className={`flex justify-between items-center cursor-pointer h-full transition-bg duration-300 ${expandedIndex === index ? 'transform bg-gray-100' : 'bg-white'}`}
+                    <div className={`${index === 0 ? 'bg-gray-300' : ''} bg-white rounded-[1.5rem]`}>
+                        <div key={index} className={`border-b-[1px] flex flex-col bg-white`}>
+                            <div className={`flex justify-between items-center cursor-pointer h-full transition-bg duration-300${expandedIndex === index ? 'transform bg-gray-100' : 'bg-white'}`}
                                 onClick={() => toggleAnswer(index)}>
                                 <div className="p-4 flex justify-between w-full">
                                     <h3 className="text-lg font-semibold">{question.question}</h3>
