@@ -21,7 +21,7 @@ const ContactDialogWindow = ({isOpen, onClose}) => {
     return (
         <div
             className={`fixed top-0 left-0 z-50 w-screen h-screen backdrop-blur-1.5 bg-gray-800/30 flex justify-center items-center ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'} transition-opacity duration-300`}>
-            <div className="bg-main-color p-6 rounded-lg shadow-lg w-1/2 h-3/5 flex flex-col">
+            <div className="bg-main-color p-6 rounded-lg shadow-lg w-1/2 pb-20 flex flex-col">
                 <div className="pb-8">
                     <div className="flex justify-end">
                         <FontAwesomeIcon icon={faXmark} onClick={onClose} className="cursor-pointer"/>

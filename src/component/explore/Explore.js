@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import mockSvg from './assets/mock-svg.svg'
+import mockSvg from './assets/image1.png'
 import ProductTopup from "./ProductTopup";
 
 const Explore = () => {
@@ -14,41 +14,36 @@ const Explore = () => {
         <section className="bg-white my-20">
             <div className="flex flex-col items-center">
                 <h1 className="py-5 text-5xl">Explore</h1>
-                <div className="flex w-[95%] flex-wrap justify-around max-lg:w-[80%] max-sm:w-[95%] 2xl:w-[80%]">
-                    <ExploreElement toggleTopUp={toggleTopUp}/>
-                    <ExploreElement toggleTopUp={toggleTopUp}/>
-                    <ExploreElement toggleTopUp={toggleTopUp}/>
-                    <ExploreElement toggleTopUp={toggleTopUp}/>
+                <div className="flex w-[95%] flex-wrap justify-evenly max-lg:w-[80%] max-sm:w-[95%] xl:w-[100%]">
+                    <ExploreElement toggleTopUp={toggleTopUp} domeImg={mockSvg}/>
+                    <ExploreElement toggleTopUp={toggleTopUp} domeImg={mockSvg}/>
+                    <ExploreElement toggleTopUp={toggleTopUp} domeImg={mockSvg}/>
+                    <ExploreElement toggleTopUp={toggleTopUp} domeImg={mockSvg}/>
                 </div>
             </div>
-            <ProductTopup isOpen={isTopUpOpen} onClose={toggleTopUp}/>
+            <ProductTopup isOpen={isTopUpOpen} onClose={toggleTopUp} domeImg={mockSvg}/>
         </section>
 
     );
 }
 
-function ExploreElement({toggleTopUp}) {
+function ExploreElement({toggleTopUp, domeImg}) {
     return (
-        <div className="border-gray-600 border-2 py-5 mt-6 px-8 max-sm:px-4 lg:w-[45%] w-full flex rounded-2.5rem justify-between max-sm:flex-col 2xl:w-[45%]">
-            <div className="flex-col px-3 py-2 w-[50%] max-sm:w-full justify-between">
-                <h1 className="text-red-600 font-bold hover:text-red-700 hover:cursor-pointer hover:transition-colors transition-colors hover:duration-700 duration-700" onClick={toggleTopUp}>The Dome - model S</h1>
-                <div className="pt-2 pb-6 flex flex-col max-sm:items-start">
-                    <p className="text-xs text-gray-600">Data: 111</p>
-                    <p className="text-xs text-gray-600">Data: 111</p>
-                    <p className="text-xs text-gray-600">Data: 111</p>
-                    <p className="text-xs text-gray-600">Data: 111</p>
-                </div>
-                <div className="flex max-sm:flex-col max-sm:items-center justify-between w-[70%] items-center max-lg:w-[65%] max-md:w-[80%] max-sm:w-full max-xl:w-[90%]">
-                    <h1 className="text-xs font-bold max-sm:self-start max-sm:text-sm">2000$</h1>
-                    <button className="bg-black rounded-2xl text-white text-xs py-1 px-5 max-sm:hidden">Contact Us</button>
-                </div>
-            </div>
+        <div className="basis-1/2 max-lg:basis-full flex justify-center items-center pb-10">
             <div
-                className="flex justify-center w-[45%] max-sm:w-full items-center bg-gray-600 rounded-2xl hover:cursor-pointer hover:shadow-[0px_0px_10px_5px_rgba(0,0,0,0.25)] hover:shadow-gray-300 hover:transition-shadow transition-shadow hover:duration-700 duration-700">
-                <img src={mockSvg} onClick={toggleTopUp} alt="Logo" className="rotate-90 w-[100px] h-[100px] text-white"/>
-            </div>
-            <div className="sm:hidden my-5 flex items-center justify-center w-full">
-                <button className="bg-black rounded-2xl text-white text-xs py-2 px-5 w-[85%]">Contact Us</button>
+                className="border-gray-600 border-2 pb-8 pt-6 px-4 mt-6 max-sm:px-4 lg:w-[85%] xl:w-[85%] 2xl:w-[80%] w-full flex rounded-2.5rem max-sm:flex-col 2xl:w-[60%] flex-col items-center">
+                <div className="flex flex-col px-3 py-2 w-[100%] max-sm:w-full items-center pb-8">
+                    <h1 className="text-red-600 font-bold text-4xl hover:text-red-700 hover:cursor-pointer hover:transition-colors transition-colors hover:duration-700 duration-700"
+                        onClick={toggleTopUp}>The Dome - model S</h1>
+                </div>
+                <div
+                    className={`flex justify-center w-[90%] max-sm:w-[95%] max-sm:self-center h-[25rem] items-center bg-gray-600 rounded-2xl hover:cursor-pointer hover:shadow-[0px_0px_10px_5px_rgba(0,0,0,0.25)] hover:shadow-gray-300 hover:transition-shadow transition-shadow hover:duration-700 duration-700 bg-cover bg-center bg-no-repeat `}
+                    style={{backgroundImage: `url(${domeImg})`}}>
+                </div>
+                <h1 className="text-3xl text-red-700 font-bold pt-8">2000$</h1>
+                <div className="my-5 flex items-center justify-center lg:w-[40%] xl:w-[40%] 2xl:w-[35%]">
+                    <button className="bg-black rounded-2xl text-white text-xl py-3 px-5 w-full">Contact Us</button>
+                </div>
             </div>
         </div>
     )
