@@ -13,7 +13,7 @@ const Navbar = () => {
         setTopUpOpen(!isTopUpOpen);
     };
     const toggleMenu = () => {
-        setMenuOpen(!isMenuOpen);
+        // setMenuOpen(!isMenuOpen);
     };
 
     return (
@@ -49,7 +49,7 @@ const Navbar = () => {
                                              size="xl" onClick={toggleTopUp}/>
                         </div>
                     </div>
-                    <div className="mr-2 flex md:hidden">
+                    <div className="mr-2 flex hidden">
                         <button
                             onClick={toggleMenu}
                             className={`inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white transition ${isMenuOpen ? 'bg-gray-700' : ''}`}>
