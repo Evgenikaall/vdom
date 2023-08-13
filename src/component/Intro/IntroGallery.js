@@ -23,31 +23,27 @@ function IntroGallery() {
     };
 
     return (
-        <div
-            className=" bg-neutral-600 rounded-l-4.5rem w-6/12 h-4/6 absolute -right-[45px] top-1/2 transform -translate-y-1/2 lg:flex justify-between hidden">
-            <div className="flex w-full justify-between">
-                <div className="flex w-[100%] items-center justify-center">
-                    <div className="w-[90%]">
-                        <img src={images[currentImageIndex]} alt="Slider Image" className="object-scale-down"/>
-                    </div>
-                </div>
+        <div className="bg-neutral-600 rounded-l-4.5rem w-6/12 h-4/6 absolute -right-[45px] top-1/2 transform -translate-y-1/2 lg:flex justify-between hidden">
+            <div className={`flex w-full justify-end bg-center bg-cover rounded-l-2.5rem transition-background-image duration-500`} style={{
+                backgroundImage: `url(${images[currentImageIndex]})`
+            }}>
                 <div className="flex flex-col self-center text-8xl space-y-11 pr-8 ">
                     <button
                         type="button"
                         className={`slider-button ${currentImageIndex === 0 ? 'active' : ''}`}
                         onClick={() => handleButtonClick(0)}>
                         <div
-                            className={`h-2 w-2 rounded-full bg-white ${currentImageIndex === 0 ? 'outline outline-white outline-offset-4' : ''} hover:opacity-75 hover:outline outline-white outline-offset-4 `}></div>
+                            className={`h-2 w-2 rounded-full bg-white transition-[outline] hover:transition-[outline] duration-500 ${currentImageIndex === 0 ? 'outline outline-white outline-offset-[5px]' : ''} hover:opacity-75 hover:outline outline-white outline-offset-[5px] `}></div>
                     </button>
                     <button className={`slider-button ${currentImageIndex === 1 ? 'active' : ''}`}
                             onClick={() => handleButtonClick(1)}>
                         <div
-                            className={`h-2 w-2 rounded-full bg-white ${currentImageIndex === 1 ? 'outline outline-white outline-offset-4 ' : ''} hover:opacity-75 hover:outline outline-white outline-offset-4 `}></div>
+                            className={`h-2 w-2 rounded-full bg-white transition-[outline] hover:transition-[outline] duration-500 ${currentImageIndex === 1 ? 'outline outline-white outline-offset-[5px] ' : ''} hover:opacity-75 hover:outline outline-white outline-offset-[5px] `}></div>
                     </button>
                     <button className={`slider-button ${currentImageIndex === 2 ? 'active' : ''}`}
                             onClick={() => handleButtonClick(2)}>
                         <div
-                            className={`h-2 w-2 rounded-full bg-white ${currentImageIndex === 2 ? 'outline outline-white outline-offset-4' : ''}hover:opacity-75 hover:outline outline-white outline-offset-4`}></div>
+                            className={`h-2 w-2 rounded-full bg-white transition-[outline] hover:transition-[outline] duration-500  ${currentImageIndex === 2 ? 'outline outline-white outline-offset-[5px]' : ''} hover:opacity-75 hover:outline outline-white outline-offset-[5px]`}></div>
                     </button>
                 </div>
             </div>

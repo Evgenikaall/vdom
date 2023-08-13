@@ -39,7 +39,7 @@ function ExploreElement({toggleTopUp}) {
                     <p className="text-xs text-gray-600">Data: 111</p>
                 </div>
                 <div className="flex max-sm:flex-col max-sm:items-center justify-between w-[70%] items-center max-lg:w-[65%] max-md:w-[80%] max-sm:w-full max-xl:w-[90%]">
-                    <h1 className="text-xs font-bold">2000$</h1>
+                    <h1 className="text-xs font-bold max-sm:self-start max-sm:text-sm">2000$</h1>
                     <button className="bg-black rounded-2xl text-white text-xs py-1 px-5 max-sm:hidden">Contact Us</button>
                 </div>
             </div>
